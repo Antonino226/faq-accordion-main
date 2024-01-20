@@ -1,0 +1,98 @@
+:root{
+    --white: hsl(0, 0%, 100%);
+    --light_pink: hsl(275, 100%, 97%);
+    --grayish_purple: hsl(292, 16%, 49%);
+    --dark_purple: hsl(292, 42%, 14%);
+}
+
+body{
+    background-color: var(--light_pink);
+}
+
+.container {
+  margin: 25px;
+
+  }
+
+.background{
+    object-fit: cover;
+    z-index: 0;
+    width: 100%;
+  object-fit: cover; /* Per coprire l'intera area con l'immagine */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card{
+  background-color: var(--white);
+  width: 480px;
+  box-shadow: 5px 5px 20px var(--grayish_purple);
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  margin-left: 50%;
+  margin-right: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.list-group li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@font-face {
+  font-family: 'WorkSans-Bold.ttf';
+  src: url("assets\fonts\static\WorkSans-Bold.ttf") format('ttf');
+}
+
+@font-face {
+  font-family: 'WorkSans-Regular.ttf';
+  src: url("assets\fonts\static\WorkSans-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'WorkSans-SemiBold.ttf';
+  src: url("assets\fonts\static\WorkSans-SemiBold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'WorkSans-Italic-VariableFont_wght';
+  src: url("assets\fonts\WorkSans-Italic-VariableFont_wght.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'WorkSans-VariableFont_wght';
+  src: url("assets\fonts\WorkSans-VariableFont_wght.ttf") format('truetype');
+}
+
+li{
+  padding: 0px;
+    font-family: WorkSans-Italic-VariableFont, sans-serif;
+    font-weight: 600;
+    color: var(--dark_purple);
+    font-size: 16px !important;
+    margin-bottom: 25px;
+
+}
+
+.list-group li:hover {
+  color: #AD28EB;
+}
+
+h1{
+  font-family: WorkSans-Bold, sans-serif;
+  font-weight: 800;
+  margin: 5px;
+  color: var(--dark_purple);
+  font-size: 35px;
+}
+
+p{
+  font-family: WorkSans-Bold, sans-serif;
+  color: hsl(275deg 4.07% 56.79%);;
+  margin-bottom: 35px;
+  font-size: 16px !important;
+}
